@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Inter;
+    src: url(fonte/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: Inter;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #344E41;
+}
+.container{
+    display: flex;
+}
+.container .esquerda{
+    width: 20vw;
+    height: 400px;
+    background-color: #D9D9D9;
+
+    box-shadow: -10px -10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 60px 0px 0px 60px;
+}
+
+.container .direita{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+    background: #3A5A40;
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+border-radius: 0px 60px 60px 0px;
+}
+
+.container .direita .logo{
+    display: flex;
+    align-items: center;
+    color: #D9D9D9;
+    text-transform: uppercase;
+}
+.container .direita .logo .tipografia h1{
+    font-weight: 700;
+    font-size: 19px;
+}
+.container .direita .logo .tipografia h2{
+    font-weight: 600;
+    font-size: 15px;
+}
+.container .direita form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .direita form .input{
+    position: relative;
+    margin-bottom: 40px;
+}
+.container .direita form input[type="text"]{
+    width: 303px;
+    height: 42px;
+    background: #D9D9D9;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    border: none;
+    outline: none;
+    padding: 20px;
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #3A5A40;
+}
+.container .direita form input[type="button"]{
+    background: #344E41;
+    border: 2px solid #F5F5F5;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 60px;
+    padding: 8px 10px;
+    width: 156px;
+    height: 42px;
+
+    font-weight: 700;
+    font-size: 20px;
+    color: #F5F5F5;
+    text-align: center;
+}
+
+.container .direita form .input label{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 16px;
+    font-weight: 600;
+    color: #344E41;
+
+}
+
+.direita form .input input:focus ~ label,
+.direita form .input input:valid ~ label
+{
+    top: -15px;
+    font-weight: 400;
+color: white;
+}
+
+.aviso{
+    margin-top: -31px;
+color: red;
+margin-bottom: 10px;
+}
