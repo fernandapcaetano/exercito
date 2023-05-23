@@ -110,16 +110,16 @@ border-radius: 0px 60px 60px 0px;
 
 }
 
-.direita form .input input:focus ~ label,
-.direita form .input input:valid ~ label
+.container .direita form .input input:focus ~ label,
+.container .direita form .input input:valid ~ label
 {
     top: -15px;
     font-weight: 400;
-color: white;
+    color: white;
 }
 
 .aviso{
     margin-top: -31px;
-color: red;
-margin-bottom: 10px;
+    color: red;
+    margin-bottom: 10px;
 }
