@@ -87,6 +87,14 @@ function validarCPF(valueCPF) {
 
 
 
+const inputDataNasc = document.querySelector("input#nascimento");
+inputDataNasc.addEventListener('keypress', dataNascimento); 
 function dataNascimento() {
+    let escritaDataNasc = inputDataNasc.value.length;
+
+    if (escritaDataNasc === 2 || escritaDataNasc === 5){
+        inputDataNasc.value += '/'
+    }
+    
 
 }
